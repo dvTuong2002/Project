@@ -1,0 +1,31 @@
+/* Thiết lập style cho tab header */
+.tab-header {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .tab-item {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .tab-item.active {
+    background-color: #4CAF50;
+  }
+  
+  /* Thiết lập style cho tab content */
+  .tab-content {
+    display: none;
+    padding: 20px;
+  }
+  
+  .tab-content.active {
+    display: block;
+  }
