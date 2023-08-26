@@ -154,9 +154,11 @@
     padding-right: 2rem;
 }
 
-/* .hotline-email{
-    width: 300px auto;
-} */
+.hotline-email{
+    width: 1295px;
+    margin-left: 305px;
+    border: 10px dotted white;
+}
 
 
 /* Sản phẩm bán chạy */
