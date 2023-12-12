@@ -158,6 +158,7 @@
     width: 1295px;
     margin-left: 305px;
     border: 10px dotted white;
+    border-radius: 10px;
 }
 
 
@@ -185,3 +186,43 @@ footer{
     display: flex;
 }
 
+
+
+.dialog{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity linear 0.2s;
+}
+
+.overlay-close{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: default;
+}
+
+.dialog:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dialog-body{
+    width: 800px;
+    height: 400px;
+    position: relative;
+    padding: 16px;
+    background-color: #fff;
+}
